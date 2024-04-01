@@ -47,7 +47,7 @@ jobs:
 
       # execute Craft commands on remote server
       - name: Execute SSH commmands on remote server
-        uses: appleboy/ssh-action@master
+        uses: OpnSrcPro/EntrepreneurServicesApp@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
