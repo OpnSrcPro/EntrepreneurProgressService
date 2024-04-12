@@ -22,7 +22,7 @@ jobs:
 
       # Install PHP dependencies
       - name: Composer install
-        run: composer install --no-interaction --no-progress --no-suggest --optimize-autoloader
+        run: composer install --no-interaction --no-progress --optimize-autoloader
 
       # Install NPM dependencies
       - name: NPM install
