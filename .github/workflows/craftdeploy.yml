@@ -12,12 +12,7 @@ jobs:
       # Pull repository into the current pipeline
       - name: Pull repository
         uses: actions/checkout@v2
-
-      # Setup container with private SSH Key (used by rsync)
-      - name: Load private SSH key
-        uses: webfactory/ssh-agent@v0.4.1
-        with:
-          ssh-private-key: ${{ secrets.SSH_KEY }}
+        
 
       # Use a specific version of Node
       - name: Setup Node
